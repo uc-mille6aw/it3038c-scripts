@@ -8,8 +8,11 @@
 
 <p>First, open PowerShell ISE as an admin.
   Next, make sure you have no execution policies in place that prevent scripts from running (set-executionpolicy unrestricted).
-  To install the module we will be using, in the PowerShell console, type:
-  Install-Module -Name NTFSSecurity </p>
+  To install the module we will be using, in the PowerShell console, type:</p>
+  
+  ```powershell
+  Install-Module -Name NTFSSecurity
+  ```
   <p>
   Accept any prompts to get the install underway. Once the module is installed, you are ready to download, open, and run my script in PowerShell ISE.
   You will be prompted to enter the path to the directory you would like to scan (spelling is important).</p>
