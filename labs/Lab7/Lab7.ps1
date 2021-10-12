@@ -6,7 +6,7 @@ cd $userPath
 
 Add-Content -path .\NtfsInfo.txt -value "An overview of all permissions:" 
 
-dir | Get-NTFSAccess | format-table -autosize | out-file -append -encoding ascii -FilePath .\NtfsInfo.txt
+dir | Get-NTFSAccess | out-file -append -encoding ascii -FilePath .\NtfsInfo.txt
 
 Add-Content -path .\NtfsInfo.txt -value "A list of owners:"
 
