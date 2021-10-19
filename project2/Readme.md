@@ -28,5 +28,5 @@ The output will be in mm/dd/yyyy h:mm:ss AM/PM format. Once you are ready to clo
 ### Misc Info
 <p>
 This script is a different script than my project 1 script. This time around I wanted to make a script that incorportated error handling (try, catch) and a loop. 
-I also updated my script launcher (the .bat file) to simplify things and remove the unnecessary pause.
+I also updated my script launcher (the .bat file) to improve things/avoid issues and remove the unnecessary pause.
 </p>
