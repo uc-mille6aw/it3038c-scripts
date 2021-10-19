@@ -22,7 +22,7 @@ Once a recognizable time zone is entered, the script will convert the current da
 
 ### Interpreting the output
 <p>
-The output will be in mm/dd/yyyy h:mm:ss AM/PM format. Once you are ready to close the window, hit enter.
+The output will be in mm/dd/yyyy hh:mm:ss AM/PM format. Once you are ready to close the window, hit enter.
 </p>
 
 ### Misc Info
