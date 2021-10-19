@@ -3,7 +3,7 @@
 ### Overview
 <p> 
 This is my script for project 2. The idea for this script was to convert the current time into a different timezone. 
-This is useful if you what to know what time it is in various places around the world.
+This is useful if you want to know what time it is in various places around the world.
 This script only works with windows systems and requires admin access.
 </p>
 
@@ -22,7 +22,7 @@ Once a recognizable time zone is entered, the script will convert the current da
 
 ### Interpreting the output
 <p>
-The output will be in mm/dd/yyyy h:mm:ss AM/PM format. Once you are ready to close the window, hit enter.
+The output will be in mm/dd/yyyy hh:mm:ss AM/PM format. Once you are ready to close the window, hit enter.
 </p>
 
 ### Misc Info
