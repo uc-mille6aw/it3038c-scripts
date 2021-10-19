@@ -3,7 +3,7 @@
 ### Overview
 <p> 
 This is my script for project 2. The idea for this script was to convert the current time into a different timezone. 
-This is often useful if you watch TV or streams with start times listed in other times zones.
+This is useful if you what to know what time it is in various places around the world.
 This script only works with windows systems and requires admin access.
 </p>
 

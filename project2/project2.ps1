@@ -1,4 +1,4 @@
-﻿#This lists the various time zones that windows/powershell is aware of
+﻿#This lists the various time zones that windows/powershell is aware of, and filters for only the name/ID property
 [System.TimeZoneInfo]::GetSystemTimeZones() | Select-Object -Property Id | Out-Host
 
 #this loop will continue until the user provides a correct time zone name
@@ -14,7 +14,7 @@ do{
            break
 
         }
-    #this catchs the error that occurs when an unknown/misspelled time zone is entered and give the user a another chance to try again
+    #this catches the error that occurs when an unknown/misspelled time zone is entered and gives the user a another chance to try again
     catch [TimeZoneNotFoundException]{
 
         Write-Host "I do not know that time zone, try again"}
