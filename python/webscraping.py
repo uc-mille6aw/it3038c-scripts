@@ -1,0 +1,10 @@
+import re
+import requests
+from bs4 import BeautifulSoup
+
+r = requests.get('https://analytics.usa.gov').content
+soup = BeautifulSoup(r, "lxml")
+print(type(soup))
+print(soup.prettify()[:100])
+for link in soup.find_all('a', attrs={'href': re.compile("^https://github.com")}):
+    print(link.get('href'))
