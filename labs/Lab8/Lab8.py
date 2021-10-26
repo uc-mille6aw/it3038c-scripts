@@ -1,7 +1,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
-#import and format the data from the store page i selected
+#import and format the data from the store page I selected
 data = requests.get("http://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html").content
 soup = BeautifulSoup(data, "html.parser")
 #get the book's title
