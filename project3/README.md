@@ -13,7 +13,8 @@
 <p>Save the script to the top level in your c drive. In powershell, run the script via python: </p>
 
 ```PowerShell
-PS C:\>python project3.py
+PS C:\Users\current_user> cd C:\
+PS C:\> python project3.py
 ```
 <p>If you can't get the python command to work, try using 'python3' or 'py' instead of 'python'. If you are still having trouble, make sure you have python installed.</p>
 <p>If you continue to have trouble and you know python is installed, try following this guide on changing the system environment variable that triggers python in PowerShell: https://www.geeksforgeeks.org/how-to-set-up-command-prompt-for-python-in-windows10/ </p>
