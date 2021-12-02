@@ -6,11 +6,12 @@ def start():
     print("You think you can hear a river flowing to your left, but there is a cave off in the distance. Which way do you go?")
     #take user input and convert to lowercase (that way they can use whatever case they want in their input)
     answer = input("Cave or River: ").lower()
+    # if the word "river" is equal to the users answer, it sends them on to the "river" function. The sting comparison == is used throughout my script.
     if "river" == answer:
-        #send the user to the river function/section of the game
+        #sends the user to the river function/section of the game
         river()
     elif "cave" == answer:
-        #send the user to the cave entrance function/part of the game
+        #sends the user to the cave entrance function/part of the game
         cave_entrance()
     else:
         #handle a mistype, and restart the game
@@ -23,14 +24,17 @@ def game_over(reason):
     #print the reason for the game ending
     print(reason)
     print()
+    # notice the .lower() method that changes the answer to lowercase. I use this for all user input
     again = input("Play Again (yes or no)? ").lower()
     if "yes" == again:
+        # if they want to play again it starts the game over
         start()
     else:
-        # if the user does not type Y or y, I end the game
+        # if the user does not type yes, I end the game
         print("Either you typed no or you mistyped. You can run the script again if you want to play more! Exiting...")
         exit()
 
+# this function is called when the player picks the path in my game that results in a win
 def win():
     print("You win! You found the path in my game that lets you live. Thanks for playing!")
     game_over("The game is over")
@@ -73,7 +77,7 @@ def inner_cave():
         print("You may have mistyped, try again.")
         print()
         inner_cave()
-
+# this function is called when the player heads toward the river
 def river():
     print()
     print("As you head towards the river, the sounds of flowing water grow increasingly louder.")
@@ -91,13 +95,13 @@ def river():
     else:
         print("You may have mistyped, try again.")
         river()
-
+# thic function is called when the player drinks the 'bad' water 
 def poison():
     print()
     print("You begin to feel unwell. You begin to realize that the water was not safe to drink.")
     print("You start feeling lightheaded and you blackout")
     game_over("You died from drinking dirty water")
-
+# this function is called when the player doesn't drink the water and continues down the river
 def river_attack():
     print("As you make your way down the shore of the river, you are ambushed by a monster.")
     print("The monster has huge claws and fangs. You fear for your life.")
@@ -107,14 +111,16 @@ def river_attack():
         print("You stand your ground and fight the monster. The monster lunges at you and you narrowly dodge the attack.")
         print("The monster trips and falls in the river. It yells out as it melts into the water, dissolving away.")
         print("It appears that you won the fight. You run away from the scene until you find a small village. The people there are kind and shelter you for the night.")
+        # players who make it this far win the gme and the win() function is called
         win()
     elif "flee" == monster_fight:
         print()
         print("You run from the monster, but he is faster than you. He begins to catch you, but suddenly two warriors appear and take the monster down.")
         print("You travel with the warriors until you arrive at their village. The people there are kind and shelter you for the night.")
+        # players who make it this far win the gme and the win() function is called
         win()
     else:
         print("You may have mistyped, try again.")
         river_attack()
-
+# this starts the game
 start()
